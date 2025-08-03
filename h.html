@@ -16,7 +16,7 @@
     position: absolute; top: 0; left: 0;
   }
   #startScreen {
-    background-image: url('start_bg.jpg'); /* 시작 화면 배경 이미지 */
+    background-color: #333; /* 배경 이미지 없으면 배경색으로 */
     display: flex; align-items: center; justify-content: center;
     font-size: 3rem; color: white; text-shadow: 0 0 10px black;
   }
@@ -25,6 +25,7 @@
     display: none;
     flex-direction: column;
     padding: 20px;
+    box-sizing: border-box;
   }
   #chatLog {
     flex-grow: 1;
@@ -78,7 +79,6 @@
   <div id="answerOptions"></div>
 </div>
 
-<!-- chat.js 불러오기 -->
 <script src="chat.js"></script>
 
 </body>
